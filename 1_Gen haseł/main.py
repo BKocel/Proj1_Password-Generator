@@ -4,7 +4,7 @@ import datetime
 
 # Generators
 
-time1 = 
+
 
 def dictionary(wcount):
     print("Function 'dictionary' was called, but it is not implemented")
@@ -17,9 +17,15 @@ def symbols(scount):
 
 
 def random(nrcount):
-
-    print("Function 'random' was called, but it is not implemented")
-    return(1)
+    i= 0
+    numbers = []
+    while i in range(nrcount):
+        rand = int(random(1))
+        numbers.append(rand)
+        i += 1
+    
+    # print("Function 'random' was called, but it is not implemented")
+    return(numbers)
 
 # CLI
 
@@ -39,6 +45,7 @@ mode = int(input("Wybierz tryb pracy generatora: "))
 match mode:
     case 1:
         print()
+        print(random(1))
     case 2:
         print()
     case 3:
