@@ -1,13 +1,15 @@
-import random   
-numbers = []
+from time import strftime, sleep
+import random
 
-i = 0
-nrcount = 2
-while i in range(nrcount):
-    rand = int(random.uniform(1, 9))
-    numbers.append(rand)
-    i += 1
+def currentkey():
+    interval = random.randrange(1,5)
+    sleep(interval)
+    dayt = int(strftime("%d")) # current day
+    print(dayt)
+    sect = int( strftime("%S")) # current time
+    print(sect )
+    keyt = dayt * sect
+    print(keyt )
+    return(keyt)
 
-print(*numbers)
-
-    
+print(currentkey())
