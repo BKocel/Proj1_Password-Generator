@@ -1,9 +1,8 @@
-import random
-import math
-from time import strftime, sleep, perf_counter_ns
+import random # Random number generation
+from time import strftime, sleep, perf_counter_ns 
 
-# secret number generator
-def currentkey():
+
+def currentkey(): # secret number generator
     sleep(random.random())
     dayt = int(strftime("%d")) # current day
     sect = int(strftime("%S")) # current time
@@ -63,9 +62,9 @@ match mode:
         out = ''.join(str(x) for x in password)
         print("Twoje nowe hasło to: ", end = '')
         print(out)
-    case 3:
-        print()
-    case 4: 
-        print()
-    case _ :
+    case 3: #TODO
+        print() 
+    case 4: #TODO
+        print() 
+    case _ : # Unexpected handler
         print("Niepoprawna opcja, proszę spróbować ponownie.")
