@@ -16,11 +16,11 @@ def symbols(scount):
     return(1)
 
 
-def random(nrcount):
+def numbers(nrcount):
     i= 0
-    numbers = []
+    numbers = []    
     while i in range(nrcount):
-        rand = int(random(1))
+        rand = random.randrange(1,10)
         numbers.append(rand)
         i += 1
     
@@ -44,8 +44,7 @@ mode = int(input("Wybierz tryb pracy generatora: "))
 
 match mode:
     case 1:
-        print()
-        print(random(1))
+        print(numbers(3))
     case 2:
         print()
     case 3:
