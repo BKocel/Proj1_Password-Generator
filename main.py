@@ -30,7 +30,7 @@ mode = int(input("Wybierz tryb pracy generatora: "))
 # Generators 
 
 match mode:
-    case 1:
+    case 1: # numbers generation
         times = int(input("Podaj długość hasła: "))
         numberlist = []
         i = 0
@@ -45,8 +45,7 @@ match mode:
         out = ''.join(str(x) for x in numberlist)
         print("Twoje nowe hasło to: ", end = '')
         print(out)
-
-    case 2:
+    case 2: # ASCII symbol generation (alphabet only)
         times = int(input("Podaj długość hasła: "))
         password = []
         i = 0
