@@ -11,7 +11,7 @@ def currentkey():
     keyt = dayt * sect
     keyt2 = keyt * msec
     random.seed(keyt2)
-    # print(keyt2) - FOR DEBUG ONLY
+    print(keyt2) # - FOR DEBUG ONLY
 
 
 # CLI

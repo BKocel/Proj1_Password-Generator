@@ -1,15 +1,17 @@
-from time import strftime, sleep
 import random
+import math
+from time import strftime, sleep, perf_counter_ns
 
 def currentkey():
-    interval = random.randrange(1,5)
-    sleep(interval)
+    sleep(random.random())
     dayt = int(strftime("%d")) # current day
-    print(dayt)
-    sect = int( strftime("%S")) # current time
-    print(sect )
+    sect = int(strftime("%S")) # current time
+    msec = perf_counter_ns()
     keyt = dayt * sect
-    print(keyt )
-    return(keyt)
+    keyt2 = keyt * msec
+    random.seed(keyt2)
+    print(keyt2) # - FOR DEBUG ONLY
 
-print(currentkey())
+
+while 1 == 1:    
+    currentkey()
