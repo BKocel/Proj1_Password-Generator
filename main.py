@@ -62,9 +62,9 @@ match mode:
         out = ''.join(str(x) for x in password)
         print("Twoje nowe hasło to: ", end = '')
         print(out)
-    case 3: #TODO
+    case 3: #TODO Combined number and ASCII Symbol generation
         print() 
-    case 4: #TODO
+    case 4: #TODO 
         print() 
     case _ : # Unexpected handler
         print("Niepoprawna opcja, proszę spróbować ponownie.")
