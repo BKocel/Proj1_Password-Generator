@@ -65,7 +65,6 @@ else:
             out = ''.join(str(x) for x in password)
             print("Twoje nowe hasło to: ", end = '')
             print(out)
-
         case 3: #TODO Combined number and ASCII Symbol generation
             
             # print(times) # for DEBUG
@@ -91,7 +90,6 @@ else:
                 out = ''.join(str(x) for x in password)
                 print("Twoje nowe hasło to: ", end = '')
                 print(out)
-
         case _ : # Unexpected handler
             print("Niepoprawna opcja, proszę spróbować ponownie. [Kod błędu: 02]") # Code 2: Improper operation selected
 
