@@ -10,7 +10,7 @@ def currentkey(): # secret number generator
     keyt = dayt * sect
     keyt2 = keyt * msec
     random.seed(keyt2)
-    print(keyt2) # - FOR DEBUG ONLY
+    # print(keyt2) # - FOR DEBUG ONLY
 
 
 # CLI
@@ -62,8 +62,36 @@ match mode:
         out = ''.join(str(x) for x in password)
         print("Twoje nowe hasło to: ", end = '')
         print(out)
+
     case 3: #TODO Combined number and ASCII Symbol generation
-        print() 
+        times = int(input("Podaj długość hasła: "))
+        print(times) # DEBUG
+        password = []
+        i=0
+        print("Proszę czeka, generowanie hasła...")
+        currentkey()
+        while i in range(times):
+            rand1 = chr(int(random.randrange(65,122)))  # leters generation
+            rand2 = int(random.randrange(0,10)) # numbers generation, dis not wokrs :/
+            order = int(random.uniform(0,2)) # randomly gives 0 or 1
+            if order == 1:
+                password.append(rand1)
+                password.append(rand2)
+            else:
+                password.append(rand2)
+                password.append(rand1)
+            i+=1
+        if len(password) == times :
+            out = ''.join(str(x) for x in password)
+            print("Twoje nowe hasło to: ", end = '')
+            print(out)
+        else:
+            print("NIEPRAWIDŁOWA DŁUGOŚĆ")
+            out = ''.join(str(x) for x in password)
+            print("Twoje nowe hasło to: ", end = '')
+            print(out)
+
+        
     case 4: #TODO 
         print() 
     case _ : # Unexpected handler
