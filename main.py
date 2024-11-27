@@ -28,8 +28,8 @@ mode = int(input("Wybierz tryb pracy generatora: "))
 
 # Generators 
 times = int(input("Podaj długość hasła: "))
-if times <= 0:
-    print("Niepoprawny argument, proszę spróbować ponownie [Kod błędu: 01]")
+if times <= 0: # Checks if proper password length has been given
+    print("Niepoprawny argument, proszę spróbować ponownie [Kod błędu: 01]") # Code 1: Improper password length
 else:
     match mode:
         case 1: # numbers generation
@@ -47,7 +47,7 @@ else:
             out = ''.join(str(x) for x in numberlist)
             print("Twoje nowe hasło to: ", end = '')
             print(out)
-        case 2: # ASCII symbol generation (alphabet only)
+        case 2: # ASCII symbol generation (alphabet & symbols only)
             
             password = []
             i = 0
@@ -55,7 +55,7 @@ else:
             currentkey()
             while i in range(times):
                 rand = int(random.randrange(65,122))
-                if rand == 10:
+                if rand == 10: # Removes any randomly generated space symbols
                     rand = 1
                     
                 else:
@@ -75,7 +75,7 @@ else:
             currentkey()
             while i in range(times):
                 rand1 = chr(int(random.randrange(65,122)))  # leters generation
-                rand2 = int(random.randrange(0,10)) # numbers generation, dis not wokrs :/
+                rand2 = int(random.randrange(0,10)) # numbers generation, it wokrs now! :)
                 order = random.random()# randomly gives 0 or 1
                 if order < 0.5:
                     password.append(rand1)
@@ -93,4 +93,6 @@ else:
                 print(out)
 
         case _ : # Unexpected handler
-            print("Niepoprawna opcja, proszę spróbować ponownie. [Kod błędu: 02]")
+            print("Niepoprawna opcja, proszę spróbować ponownie. [Kod błędu: 02]") # Code 2: Improper operation selected
+
+        # Hours wasted: ~4 
