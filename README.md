@@ -16,7 +16,7 @@ Użytkownik wybiera tryb losowania programu:
 
 #### Najważniejsze funkcje:
 1. Funkcja ***random.randrange(a, b)*** z biblioteki **random**, użyta do generowania losowych wartości zmiennoprzecinkowych z zakresu a - b (konwertowanych potem do liczby całkowitej); <br>
-2. Funkcja ***tim.strftime*** z biblioteki **time**, użyta do pozyskana aktualnego czasu, użytego do generowania losowego ziarna, wspomagającego generację losowych wartości; <br>
+2. Funkcja ***time.strftime*** z biblioteki **time**, użyta do pozyskana aktualnego czasu, użytego do generowania losowego ziarna, wspomagającego generację losowych wartości; <br>
 3. Funkcja ***currentkey** zawarta w programie, generuje ziarno dla funkcji *random*, używając aktualnego dnia i czasu w milisekundach. <br>
 
 #### Działanie programu:
