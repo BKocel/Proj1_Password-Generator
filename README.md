@@ -20,7 +20,7 @@ Użytkownik wybiera tryb losowania programu:
 3. Funkcja ***currentkey** zawarta w programie, generuje ziarno dla funkcji *random*, używając aktualnego dnia i czasu w milisekundach. <br>
 
 #### Działanie programu:
-Po uruchomieniu program pyta użytkownika, jak metoda losowania ma być użyta: <br>
+Po uruchomieniu program pyta użytkownika, jak metoda losowania ma być użyta. <br>
 > Do wybrou są trzy metody opisane w sekcji **Opis działania programu**
 
 Po wybraniu metody generacji program pyta użytkownika o długość hasła. I podaje gotowe hasło. <br>
