@@ -21,7 +21,7 @@ print("Oto mozliwe metody losowania")
 print()
 print("1. Numery")
 print("2. Symbole")
-print("3. Symbole i Numery")
+print("3. Symbole i numery")
 
 
 mode = int(input("Wybierz tryb pracy generatora: "))
