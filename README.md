@@ -1,4 +1,4 @@
-# Nazwa programu: "Generator haseł" <br> Plik zawierający program: "main.py"
+## Nazwa programu: "Generator haseł" <br> Plik zawierający program: "main.py"
 
 #### Opis działania programu:
 Użytkownik wybiera tryb losowania programu:
@@ -14,9 +14,32 @@ Użytkownik wybiera tryb losowania programu:
 5. **out** - typ *string*, przechowuje hasło w postaci tekstu. <br>
 6. **order** - typ *int*, generowana losowo, decyduje czy generowana będzie cyfra, czy litera (***Używana tylko w 3 trybie!***).
 
-### Najważniejsze funkcje:
+#### Najważniejsze funkcje:
 1. Funkcja ***random.randrange(a, b)*** z biblioteki **random**, użyta do generowania losowych wartości zmiennoprzecinkowych z zakresu a - b (konwertowanych potem do liczby całkowitej); <br>
 2. Funkcja ***tim.strftime*** z biblioteki **time**, użyta do pozyskana aktualnego czasu, użytego do generowania losowego ziarna, wspomagającego generację losowych wartości; <br>
 3. Funkcja ***currentkey** zawarta w programie, generuje ziarno dla funkcji *random*, używając aktualnego dnia i czasu w milisekundach. <br>
+
+#### Działanie prograamu:
+Po uruchomieniu program pyta użytkownika, jak metoda losowania ma być użyta: <br>
+> Do wybrou są trzy metody opisane w sekcji **Opis działania programu**
+
+Po wybraniu metody generacji program pyta użytkownika o długość hasła. I podaje gotowe hasło. <br>
+Przykładowo: 
+```
+
+Witaj w generatorze haseł
+
+Oto mozliwe metody losowania
+
+1. Numery
+2. Symbole
+3. Symbole i numery
+Wybierz tryb pracy generatora: 3
+Podaj długość hasła: 6
+Proszę czeka, generowanie hasła...
+Twoje nowe hasło to: 31V6E0 
+```
+
+
 
 
