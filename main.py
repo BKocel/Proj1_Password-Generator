@@ -93,4 +93,4 @@ else:
         case _ : # Unexpected handler
             print("Niepoprawna opcja, proszę spróbować ponownie. [Kod błędu: 02]") # Code 2: Improper operation selected
 
-        # Hours wasted: ~4 
+    
