@@ -26,7 +26,6 @@ Po uruchomieniu program pyta użytkownika, jak metoda losowania ma być użyta. 
 Po wybraniu metody generacji program pyta użytkownika o długość hasła. I podaje gotowe hasło. <br>
 Przykładowo: 
 ```
-
 Witaj w generatorze haseł
 
 Oto mozliwe metody losowania
