@@ -19,7 +19,7 @@ Użytkownik wybiera tryb losowania programu:
 2. Funkcja ***tim.strftime*** z biblioteki **time**, użyta do pozyskana aktualnego czasu, użytego do generowania losowego ziarna, wspomagającego generację losowych wartości; <br>
 3. Funkcja ***currentkey** zawarta w programie, generuje ziarno dla funkcji *random*, używając aktualnego dnia i czasu w milisekundach. <br>
 
-#### Działanie prograamu:
+#### Działanie programu:
 Po uruchomieniu program pyta użytkownika, jak metoda losowania ma być użyta: <br>
 > Do wybrou są trzy metody opisane w sekcji **Opis działania programu**
 
