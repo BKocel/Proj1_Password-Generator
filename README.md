@@ -3,7 +3,7 @@
 #### Opis działania programu:
 Użytkownik wybiera tryb losowania programu:
 1. Generacja liczb: program generuje wybraną przez użytkownika liczbę cyfr od 1 do 10; <br>
-2. Generacja alfabetu: program generuje wybraną przez użytkownika liczbę liter, losując ich kodu ASCII (**65 - 122**); <br>
+2. Generacja alfabetu: program generuje wybraną przez użytkownika liczbę liter,   losując ich kodu ASCII (**65 - 122**); <br>
 3. Generacja liczb i alfabetu: program generuję wybraną przez użytkownika liczbę liter lub cyfer (*Wybierane losowo*) , za pomocą ich kodów ASCII (**0-10, 65-122**). 
 
 #### Użyte zmienne i ich typy:
