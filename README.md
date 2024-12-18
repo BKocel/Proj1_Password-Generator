@@ -7,11 +7,11 @@ Użytkownik wybiera tryb losowania programu:
 3. Generacja liczb i alfabetu: program generuję wybraną przez użytkownika liczbę liter lub cyfer (*Wybierane losowo*), za pomocą ich kodów ASCII (**0-10, 65-122**). 
 
 #### Użyte zmienne i ich typy:
-1. **mode** - typ *int*, przechowuje wybrany tryb pracy generatora haseł (*Sposób generacji hasła*). <br>
-2. **times** - typ *int*, przechowuje wybraną przez użytkownika długość hasła. <br>
-3. **rand** - typ *int*, przechowuje aktualnie generowaną literę hasła w postaci liczby(*przy generowaniu liczb*) lub jej codu ASCII(*generowanie znaków oraz znaków i liczb*). <br>
-4. **password** - typ *list*, przechowuje całość wygenerowanego hasła w postaci liter i znaków ASCII. <br>
-5. **out** - typ *string*, przechowuje hasło w postaci tekstu. <br>
+1. **mode** - typ *int*, przechowuje wybrany tryb pracy generatora haseł (*Sposób generacji hasła*); <br>
+2. **times** - typ *int*, przechowuje wybraną przez użytkownika długość hasła; <br>
+3. **rand** - typ *int*, przechowuje aktualnie generowaną literę hasła w postaci liczby(*przy generowaniu liczb*) lub jej codu ASCII(*generowanie znaków oraz znaków i liczb*); <br>
+4. **password** - typ *list*, przechowuje całość wygenerowanego hasła w postaci liter i znaków ASCII; <br>
+5. **out** - typ *string*, przechowuje hasło w postaci tekstu; <br>
 6. **order** - typ *int*, generowana losowo, decyduje czy generowana będzie cyfra, czy litera (***Używana tylko w 3 trybie!***).
 
 #### Najważniejsze funkcje:
